@@ -2,6 +2,9 @@
 
 <h4>Listado personajes</h4>
     <ul class="list-group">
-        <li class="list-group-item">Krillin - 500</li>
-        <li class="list-group-item">Goku - 10000</li>
+        <li *ngFor="let character of characterList"
+        class="list-group-item">
+        {{ character.name }} - Power: {{character.power}}
+    </li>
+
     </ul>
